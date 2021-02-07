@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    background: fixed linear-gradient( 135deg,rgb(10, 0, 35) 90%,indigo);
+    color: aliceblue;line-height: 1.25rem;
+}
+
+h1{
+    font-size: 2.5rem;width: 100%;text-align: center; font-weight: 700;
+}
+h2{
+    text-align: center;
+}
+
+.list{
+    display: block;
+    margin: 2rem; padding: 2rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right,  purple,rgb(55, 55, 235));
+    border-image-slice: 1; transition: all 0.25s ease-in-out;
+}
+
+.list:hover{
+    box-shadow: -2px -2px 5px 1px purple, 2px 2px 5px 1px rgb(55, 55, 235);
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column; text-align: center; font-weight: 600;
+}
+
+code{
+    color: orangered; font-size: 1.1rem; background-color: #304; padding : 0.15rem ; letter-spacing: 0.09rem; line-height: 1.75rem;font-weight: 500;
+}
+
+a{
+    color: white; text-decoration: none; font-weight: 700; font-size: 1rem;
+}
+li{
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .list{
+    margin: 2rem 2vw; padding: 2vw;
+    }
+    html{
+        font-size: 13px;
+    }
+    code{
+        font-size: 1.05rem;
+    }
+  }
