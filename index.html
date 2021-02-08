@@ -4,81 +4,78 @@
 		<meta charset="UTF-8" />
 		<title>Chaotic-AUR automated building repo for AUR packages</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+		<meta name="description" content="Helping you, so you don't have to worry about building AUR packages in each update!">
 		<meta property="og:title" content="Chaotic-AUR automated repo" />
 		<meta property="og:url" content="https://aur.chaotic.cx" />
 		<meta property="og:description" content="Helping you, so you don't have to worry about building AUR packages in each update!" />
+		<link rel="stylesheet" href="style.css">
 	</head>
 
-	<body><div class="container">
+	<body>
 		<h1>Chaotic-AUR</h1>
-		<p>Automated building repo for <a target="_blank" href="https://aur.archlinux.org">AUR</a> packages</p>
-		<p>For news, check the telegram channel <a target="_blank" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>.
-
-		<h2>Disclaimer:</h2>
-		<p>This repo is generated on-demand from packages I use on my personal computer.<br/>
-		If you find any package license infringement, please notify me at <code>root[at]pedrohlc.com</code>. I'll then remove it and blacklist.</p>
-
+		<p style="text-align: center;">Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages</p>
+		<!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br>
+		
+	<div class="list">
 		<h2 id="howto">How to use it?</h2>
-		<p>Install our keyring <a target="_blank" href="https://aur.archlinux.org/packages/chaotic-keyring">from AUR</a> or download <a href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/chaotic-keyring-20201229-1-any.pkg.tar.zst">pre-built from here</a>.</p>
-		<p>Install our mirrorlist <a target="_blank" href="https://aur.archlinux.org/packages/chaotic-mirrorlist">from AUR</a> or download <a href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/chaotic-mirrorlist-20210205-2-any.pkg.tar.zst">pre-built from here</a>.</p>
+		<p>Install our keyring <a target="_blank" rel="noopener" href="https://aur.archlinux.org/packages/chaotic-keyring">from AUR</a> or download <a href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/chaotic-keyring-20201229-1-any.pkg.tar.zst">pre-built from here</a>.</p>
+		<p>Install our mirrorlist <a target="_blank" rel="noopener" href="https://aur.archlinux.org/packages/chaotic-mirrorlist">from AUR</a> or download <a href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/chaotic-mirrorlist-20210205-2-any.pkg.tar.zst">pre-built from here</a>.</p>
 		<p>Append to <code>/etc/pacman.conf</code>:</p>
 		<code>[chaotic-aur]<br/>
-	Include = /etc/pacman.d/chaotic-mirrorlist<br/>
+		Include = /etc/pacman.d/chaotic-mirrorlist
 		</code>
-		<br/>
-		<br/>
-
+	</div>
+	<div class="list">
 		<h2>Recommendations:</h2>
 		<ul>
 			<li id="note-powerpill">
-				You may want to use <a target="_blank" href="https://wiki.archlinux.org/index.php/Powerpill">powerpill</a>, so you download from all mirrors simultaneously.
+				You may want to use <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Powerpill">powerpill</a>, so you download from all mirrors simultaneously.
 				I recommend doing updates this way: <code>sudo pacman -Sy &#x26;&#x26; sudo powerpill -Su &#x26;&#x26; paru -Su</code>.<br/>
 				When using powerpill, insert all mirrors in your <code>pacman.conf</code> or use <code>chaotic-mirrorlist</code> with all of them active.
 			</li>
 			<li id="note-repossorting">If you're using other third parties repositories, I recommend you to put chaotic-aur <strong>before</strong> them on <code>/etc/pacman.conf</code>. We update most packages hourly and follow AUR's PKGBUILDs, which makes this repository more suitable as the first option when downloading packages.</li>
-			<li id="note-ignorepkg">If you need to omit one package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
+			<li id="note-ignorepkg">If you need to omit one package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank" rel="noopener">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
 			<li id="note-nvidia">If you're going to use one kernel from this repository with <strong>NVIDIA drivers</strong>, you'd better <strong>not use official</strong> Nvidia drivers packages. And instead, use chaotic-aur ones (<code>chaotic-nvidia{,-dev}-dkms-tkg</code>). These packages are built with patches to support all kernels available in chaotic-aur and the ArchLinux's official repositories.</li>
 			<li>You can pick the repository from which you download a package, like this: <code>pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR's helpers support it too, e.g: <code>yay -S aur/firefox-hg</code>
 			<li>You must have multilib repository enabled.</li>
 		</ul>
+	</div>
 
+	<div class="list">
 		<h2>About:</h2>
 		<ul>
-			<li>Most packages available in this repo, are automatically built from their respective <a target="_blank" href="https://aur.archlinux.org">AUR</a> source package. But some are not, check <a href="https://github.com/chaotic-aur/packages">github.com/chaotic-aur/packages</a> for seeing which ones.</li>
-			<li>The primary building cluster is a node in <a target="_blank" href="https://www2.ufscar.br/">UFSCar</a>'s datacenter. Hosted in São Carlos, São Paulo, Brazil.</li>
+		<li>Most packages available in this repo, are automatically built from their respective <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> source package. But some are not, check <a href="https://github.com/chaotic-aur/packages">github.com/chaotic-aur/packages</a> for seeing which ones.</li>
+		<li>The primary building cluster is a node in <a target="_blank" rel="noopener" href="https://www2.ufscar.br/">UFSCar</a>'s datacenter. Hosted in São Carlos, São Paulo, Brazil.</li>
 		</ul>
 		<p>Feel free to create an issue for suggestions, flagging database corruptions and everything else:
-		<a target="_blank" href="https://github.com/chaotic-aur/packages/issues">Issues</a><br/>
+		<a target="_blank" rel="noopener" href="https://github.com/chaotic-aur/packages/issues">Issues</a><br/>
 		Report build bugs to source package's maintainers.</p>
-
+	</div>	
+	<div class="list">
 		<h2>Links:</h2>
 		<ul>
-			<li>Telegram channel with news and updates: <a target="_blank" href="https://t.me/s/chaotic_aur">@chaotic_aur</a> (includes a discussion group)</li>
-			<li>Server's infra source code: <a target="_blank" href="https://github.com/chaotic-aur/toolbox">GitHub</a></li>
+			<li>Telegram channel with news and updates: <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a> (includes a discussion group)</li>
+			<li>Server's infra source code: <a target="_blank" rel="noopener" href="https://github.com/chaotic-aur/toolbox">GitHub</a></li>
 			<!--li>pkgs.org summary: <a href="https://archlinux.pkgs.org/rolling/chaotic-aur-x86_64">pkgs.org</a> (Outdated)</li-->
-			<li>Status page: <a target="_blank" href="https://status.pedrohlc.com">Monitors</a></li>
+			<li>Status page: <a target="_blank" rel="noopener" href="https://status.pedrohlc.com">Monitors</a></li>
 		</ul>
-
-
-		<h2>Maintainer:</h2>
-		<code>
-			Pedro H. Lara Campos <a target="_blank" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a><br/>
-		</code>
+	</div>
+	<div class="list">
+		<h2>Maintainer:</h2>		
+			Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a><br/>
 		<h2>Co-Maintainers:</h2>
 		<ul>
-			<li><code>Librewish (Shrinivas Kumbhar)</code> <a target="_blank" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- <a href="https://garudalinux.org/" target="_blank">Garuda</a>'s founder</li>
-			<li><code>SolarAquarion (S Choina)</code> <a target="_blank" href="https://github.com/SolarAquarion">&lt;github.com/SolarAquarion&gt;</a></li>
-			<li><code>Thotypous (Paulo Matias)</code> <a target="_blank" href="https://github.com/thotypous">&lt;github.com/thotypous&gt;</a> -- Past Trusted User</li>
-			<li><code>Rustem B.</code> <a target="_blank" href="https://github.com/RustemB">&lt;github.com/RustemB&gt;</a></li>
-			<li><code>Nico</code> <a target="_blank" href="https://github.com/dr460nf1r3">&lt;github.com/dr460nf1r3&gt;</a></li>
+			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- <a href="https://garudalinux.org/" target="_blank" rel="noopener">Garuda Linux's founder</a></li>
+			<li>SolarAquarion (S Choina) <a target="_blank" rel="noopener" href="https://github.com/SolarAquarion">&lt;github.com/SolarAquarion&gt;</a></li>
+			<li>Thotypous (Paulo Matias) <a target="_blank" rel="noopener" href="https://github.com/thotypous">&lt;github.com/thotypous&gt;</a> -- Past Trusted User</li>
+			<li>Rustem B. <a target="_blank" rel="noopener" href="https://github.com/RustemB">&lt;github.com/RustemB&gt;</a></li>
+			<li>Nico <a target="_blank" rel="noopener" href="https://github.com/dr460nf1r3">&lt;github.com/dr460nf1r3&gt;</a></li>
 		</ul>
-		<br/>
-		<strong>Last modified:</strong>
-		<code>2021-02-05 09:27 (GMT-3)</code>
-		<br/>
-		<strong>Online since:</strong>
-		<code>2018-10-19</code>
-	</div></body>
+	</div>
+<div class="list"><h2>Disclaimer:</h2>
+	<p>This repo is generated on-demand from packages I use on my personal computer.
+	If you find any package license infringement, please notify me through <a href="mailto:root@pedrohlc.com">email</a>. I'll then remove it and blacklist.</p></div>	
+
+<footer><span>Last modified:<code>2021-02-05 09:27 (GMT-3)</code></span><span>Online since:<code>2018-10-19</code></span></footer>
+</body>
 </html>
