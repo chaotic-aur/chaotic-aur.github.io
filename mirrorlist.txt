@@ -32,9 +32,8 @@ Server = http://es.mirror.chaotic.cx/$repo/$arch
 Server = http://de-1.mirror.chaotic.cx/$repo/$arch
 #Server = https://de-1-mirror.chaotic.cx/$repo/$arch
 
-## By: ParanoidBangL (not HTTPS) -- alias bangl-mirror.chaotic.cx
+## By: ParanoidBangL (without HTTPS) -- alias bangl-mirror.chaotic.cx
 Server = http://de-2.mirror.chaotic.cx/$repo/$arch
-$Server = https://de-2-mirror.chaotic.cx/$repo/$arch
 
 # Seoul, Korea
 ## By: Ryoichi <t.me/maakpain> -- alias: maakpain-mirror.chaotic.cx
