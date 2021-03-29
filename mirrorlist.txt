@@ -43,10 +43,6 @@ Server = https://be-bru-mirror.chaotic.cx/$repo/$arch
 # * By: Ryoichi <t.me/maakpain>
 Server = https://kr-mirror.chaotic.cx/$repo/$arch
 
-# Singapore
-# * By: Nico (End-of-live: 2021-05-22)
-Server = https://sg-mirror.chaotic.cx/$repo/$arch
-
 # Bulgaria
 # * By: Sudo Man <github.com/sakrayaami>
 Server = https://bg-mirror.chaotic.cx/$repo/$arch
