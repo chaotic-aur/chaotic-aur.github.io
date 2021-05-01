@@ -37,7 +37,7 @@ Server = https://de-1-mirror.chaotic.cx/$repo/$arch
 # * By: ParanoidBangL (without HTTPS)
 Server = http://de-2-mirror.chaotic.cx/$repo/$arch
 # * By: ptr1337
-Server = https://chaotic.ptr1337.dev/$repo/$arch
+Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 
 # Brussels, Belgium
 # * By: Belnet, the Belgian Education and Research Network
