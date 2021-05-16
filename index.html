@@ -18,9 +18,13 @@
 		
 	<div class="list">
 		<h2 id="howto">How to use it?</h2>
-		<p>Install our keyring <a href="https://cdn-mirror.chaotic.cx/chaotic-aur/x86_64/chaotic-keyring-20210406-1-any.pkg.tar.zst">pre-built from here</a>.</p>
-		<p>Install our mirrorlist <a href="https://cdn-mirror.chaotic.cx/chaotic-aur/x86_64/chaotic-mirrorlist-20210501-1-any.pkg.tar.zst">pre-built from here</a>.</p>
-		<p>Append to <code>/etc/pacman.conf</code>:</p>
+		<p>Install the primary key, with it install our keyring, and finishing installing our mirrorlist.</p>
+		<code>
+			pacman-key --recv-key 3056513887B78AEB<br/>
+			pacman-key --lsign-key 3056513887B78AEB<br/>
+			pacman -U  'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst'
+		</code>
+		<p>Append (add to the <strong>end</strong> of the file) <code>/etc/pacman.conf</code>:</p>
 		<code>[chaotic-aur]<br/>
 		Include = /etc/pacman.d/chaotic-mirrorlist
 		</code>
