@@ -14,11 +14,9 @@ Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 #Server = https://br-sp-mirror.chaotic.cx/$repo/$arch
 
 # USA
-# * Texas, By: XStefen
-Server = https://us-tx-2-mirror.chaotic.cx/$repo/$arch
 # * Washington, By: LordKitsuna
 Server = https://us-wa-mirror.chaotic.cx/$repo/$arch
-# * Utah, By: The-aus
+# * Utah, By: ash (@the_ashh on telegram)
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
 # * Los Angeles - CA, By: IRC-Nerds
 Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
@@ -38,6 +36,8 @@ Server = https://de-1-mirror.chaotic.cx/$repo/$arch
 Server = http://de-2-mirror.chaotic.cx/$repo/$arch
 # * By: ptr1337
 Server = https://de-3-mirror.chaotic.cx/$repo/$arch
+# * By: redgloboli
+Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 
 # Brussels, Belgium
 # * By: Belnet, the Belgian Education and Research Network
