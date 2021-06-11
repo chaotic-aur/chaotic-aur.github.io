@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8">
 		<title>Chaotic-AUR automated building repo for AUR packages</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Helping you, so you don't have to worry about building AUR packages in each update!">
-		<meta property="og:title" content="Chaotic-AUR automated repo" />
-		<meta property="og:url" content="https://aur.chaotic.cx" />
-		<meta property="og:description" content="Helping you, so you don't have to worry about building AUR packages in each update!" />
+		<meta property="og:title" content="Chaotic-AUR automated repo">
+		<meta property="og:url" content="https://aur.chaotic.cx">
+		<meta property="og:description" content="Helping you, so you don't have to worry about building AUR packages in each update!">
 		<link rel="stylesheet" href="style.css">
 	</head>
 
-	<body>
-		<h1>Chaotic-AUR</h1>
-		<p style="text-align: center;">Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages</p>
-		<!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br>
-		
+<body>
+	<h1>Chaotic-AUR</h1>
+	<p>Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages</p>
+	<!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br>
+
 	<div class="list">
 		<h2 id="howto">How to use it?</h2>
 		<p>Install the primary key, with it install our keyring, and finishing installing our mirrorlist.</p>
-		<code>
-			pacman-key --recv-key 3056513887B78AEB<br/>
-			pacman-key --lsign-key 3056513887B78AEB<br/>
-			pacman -U  'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst'
-		</code>
+			<code>pacman-key --recv-key 3056513887B78AEB</code><br/>
+			<code>pacman-key --lsign-key 3056513887B78AEB</code><br/>
+			<code>pacman -U  'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst'</code>
 		<p>Append (add to the <strong>end</strong> of the file) <code>/etc/pacman.conf</code>:</p>
 		<code>[chaotic-aur]<br/>
 		Include = /etc/pacman.d/chaotic-mirrorlist
 		</code>
 	</div>
+	
 	<div class="list">
 		<h2>Recommendations:</h2>
 		<ul>
@@ -47,13 +50,14 @@
 	<div class="list">
 		<h2>About:</h2>
 		<ul>
-		<li>Most packages available in this repo, are automatically built from their respective <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> source package. But some are not, check <a href="https://github.com/chaotic-aur/packages">github.com/chaotic-aur/packages</a> for seeing which ones.</li>
-		<li>The primary building cluster is a node in <a target="_blank" rel="noopener" href="https://www2.ufscar.br/">UFSCar</a>'s datacenter. Hosted in São Carlos, São Paulo, Brazil.</li>
+			<li>Most packages available in this repo, are automatically built from their respective <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> source package. But some are not, check <a href="https://github.com/chaotic-aur/packages">github.com/chaotic-aur/packages</a> for seeing which ones.</li>
+			<li>The primary building cluster is a node in <a target="_blank" rel="noopener" href="https://www2.ufscar.br/">UFSCar</a>'s datacenter. Hosted in São Carlos, São Paulo, Brazil.</li>
 		</ul>
 		<p>Feel free to create an issue for suggestions, flagging database corruptions and everything else:
 		<a target="_blank" rel="noopener" href="https://github.com/chaotic-aur/packages/issues">Issues</a><br/>
 		Report build bugs to source package's maintainers.</p>
-	</div>	
+	</div>
+
 	<div class="list">
 		<h2>Links:</h2>
 		<ul>
@@ -63,9 +67,10 @@
 			<li>Status page: <a target="_blank" rel="noopener" href="https://status.chaotic.cx">Status monitoring</a></li>
 		</ul>
 	</div>
+
 	<div class="list">
 		<h2>Maintainer:</h2>		
-			<center>Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a></center><br/>
+		<p>Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a></p><br/>
 		<h2>Co-Maintainers and Contributors:</h2>
 		<ul>
 			<li>LordKitsuna (and his Threadripper) <a target="_blank" rel="noopener" href="https://github.com/lordkitsuna">&lt;github.com/lordkitsuna&gt;</a></li>
@@ -80,7 +85,8 @@
 		<h2>Special Thanks:</h2>
 		<ul>
 			<li>Our mirrors' providers;</li>
-			<li><a target="_blank" rel="noopener" href="https://github.com/Tk-Glitch">Tk-Glitch (TkG)</a>;
+			<li>
+				<a target="_blank" rel="noopener" href="https://github.com/Tk-Glitch">Tk-Glitch (TkG)</a>;
 				<a target="_blank" rel="noopener" href="https://github.com/Kodehawa">Kodehawa</a>;
 				<a target="_blank" rel="noopener" href="https://aur.archlinux.org/account/figue">Figue</a>;
 				<a target="_blank" rel="noopener" href="https://github.com/benjamimgois">Benjamim Gois</a>;
@@ -90,12 +96,15 @@
 			<li>AUR package maintainers; ArchLinux TUs and staffers;</li>
 			<li>And everybody who somehow helped all the projects we prebuild.</li>
 		</ul>
-		
 	</div>
-<div class="list"><h2>Disclaimer:</h2>
-	<p>This repo is generated on-demand from packages I use on my personal computer.
-	If you find any package license infringement, please notify me through <a href="mailto:root@pedrohlc.com">email</a>. I'll then remove it and blacklist.</p></div>	
 
-<footer><span>Last modified:<code>2021-03-30 13:00 (GMT-3)</code></span><br/><span>Online since:<code>2018-10-19</code></span></footer>
+	<div class="list"><h2>Disclaimer:</h2>
+		<p>This repo is generated on-demand from packages I use on my personal computer.
+		If you find any package license infringement, please notify me through <a href="mailto:root@pedrohlc.com">email</a>. I'll then remove it and blacklist.</p>
+	</div>	
+
+	<footer>
+		<span><h3>Last modified:</h3><code>2021-03-30 13:00 (GMT-3)</code></span>
+		<span><h3>Online since:</h3><code>2018-10-19</code></span></footer>
 </body>
 </html>

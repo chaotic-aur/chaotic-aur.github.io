@@ -1,43 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     background-color: black;
-    background: fixed linear-gradient( 135deg,rgb(10, 0, 35) 90%,indigo);
-    color: aliceblue;line-height: 1.25rem;
+    background: fixed linear-gradient( 135deg,rgb(12, 0, 45) 90%,indigo);
+    color: aliceblue;
+    padding: 1em;
 }
 
 h1{
-    font-size: 2.5rem;width: 100%;text-align: center; font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
-h2{
+
+h2 {
+    margin: 1em 0;
+    text-decoration: underline;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h1 ,h2 ,p {
     text-align: center;
+}
+
+.list:first-of-type p {
+    text-align: left;
 }
 
 .list{
     display: block;
-    margin: 2rem; padding: 2rem;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right,  purple,rgb(55, 55, 235));
-    border-image-slice: 1; transition: all 0.25s ease-in-out;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 75ch;/*this make so that reading is more comfortable*/
+    border: 0;
+    border-radius: 2em;
+    background-color: rgb(12, 0, 45);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: box-shadow 0.25s ease-in-out;
 }
 
 .list:hover{
     box-shadow: -2px -2px 5px 1px purple, 2px 2px 5px 1px rgb(55, 55, 235);
 }
 
-footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column; text-align: center; font-weight: 600;
-}
-
 code{
-    color: orangered; font-size: 1.1rem; background-color: #304; padding : 0.15rem ; letter-spacing: 0.09rem; line-height: 1.75rem;font-weight: 500;
+    color: orangered;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    background-color: #304;
+    padding : 0 0.2rem ;
+    letter-spacing: 0.09rem;
+    border-radius: 0.2em;
 }
 
 a{
-    color: white; text-decoration: none; font-weight: 700; font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
 }
+
 li{
     margin: 0.5rem;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4em;
 }
 
 @media screen and (max-width: 600px) {
