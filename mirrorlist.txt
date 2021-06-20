@@ -1,21 +1,11 @@
-# Randomly pick one of the mirrors below (except CDN)
-# - This is GOOD with with Pacman 6+ parallel downloads;
-# - This is BAD with powerpill;
-# - This helps us not overusing one specific mirror;
-# - But feel free to comment it and use the list below instead.
-Server = https://random-mirror.chaotic.cx/$repo/$arch
+# Automatic per-country routing of the mirrors below.
+Server = https://geo-mirror.chaotic.cx/$repo/$arch
 
-# CDN
-# By: Fosshost (Takes 4 hours to sync updates - DB comes from a always fresh mirror)
+# CDN (delayed syncing)
+# By: Fosshost
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
-# Brazil
-# * By: UFSCar (dead right now)
-#Server = https://br-sp-mirror.chaotic.cx/$repo/$arch
-
 # USA
-# * Washington, By: LordKitsuna
-Server = https://us-wa-mirror.chaotic.cx/$repo/$arch
 # * Utah, By: ash (@the_ashh on telegram)
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
 # * Los Angeles - CA, By: IRC-Nerds
@@ -28,10 +18,12 @@ Server = https://nl-mirror.chaotic.cx/$repo/$arch
 # Burgos, Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
+# * By: Icar
+Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 
 # Germany
 # * By: Nico
-Server = https://de-1-mirror.chaotic.cx/$repo/$arch
+Server = https://de-mirror.chaotic.cx/$repo/$arch
 # * By: ParanoidBangL (without HTTPS)
 Server = http://de-2-mirror.chaotic.cx/$repo/$arch
 # * By: ptr1337
