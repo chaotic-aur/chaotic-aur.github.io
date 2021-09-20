@@ -11,10 +11,6 @@ Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
 # * Los Angeles - CA, By: IRC-Nerds
 Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
 
-# Netherlands
-# * By: Easy Lee
-Server = https://nl-mirror.chaotic.cx/$repo/$arch
-
 # Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
@@ -24,8 +20,8 @@ Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 # Germany
 # * By: Nico
 Server = https://de-mirror.chaotic.cx/$repo/$arch
-# * By: ParanoidBangL (without HTTPS)
-Server = http://de-2-mirror.chaotic.cx/$repo/$arch
+# * By: ParanoidBangL
+Server = https://de-2-mirror.chaotic.cx/$repo/$arch
 # * By: ptr1337
 Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
