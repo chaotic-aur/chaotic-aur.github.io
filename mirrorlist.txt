@@ -22,7 +22,7 @@ Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 Server = https://de-mirror.chaotic.cx/$repo/$arch
 # * By: ParanoidBangL
 Server = https://de-2-mirror.chaotic.cx/$repo/$arch
-# * By: ptr1337
+# * By: itsTyrion
 Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
@@ -44,5 +44,5 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
 
 # Mumbai, India
-# * By virusz4274
+# * By WebWerks
 Server = https://in-mirror.chaotic.cx/$repo/$arch
