@@ -14,7 +14,7 @@ Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
 # Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
-# * By: Icar
+# * By: Ícar
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 
 # Germany
