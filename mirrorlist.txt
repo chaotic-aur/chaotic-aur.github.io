@@ -6,9 +6,9 @@ Server = https://geo-mirror.chaotic.cx/$repo/$arch
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
 # USA
-# * Utah, By: ash (@the_ashh on telegram)
+# * Utah, By: ash <t.me/the_ashh>
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
-# * Los Angeles - CA, By: IRC-Nerds
+# * Los Angeles - CA, By: IRC-Nerds <t.me/@sorcerer420>
 Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
 
 # Spain
@@ -30,6 +30,10 @@ Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 # Brussels, Belgium
 # * By: Belnet, the Belgian Education and Research Network
 Server = https://be-bru-mirror.chaotic.cx/$repo/$arch
+
+# France
+# * By: IRC-Nerds <t.me/@sorcerer420>
+Server = https://fr-mirror.chaotic.cx/$repo/$arch
 
 # São Carlos, Brazil
 # * By: Universidade Federal de São Carlos
