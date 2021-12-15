@@ -27,10 +27,6 @@ Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 
-# Brussels, Belgium
-# * By: Belnet, the Belgian Education and Research Network
-Server = https://be-bru-mirror.chaotic.cx/$repo/$arch
-
 # France
 # * By: IRC-Nerds <t.me/@sorcerer420>
 Server = https://fr-mirror.chaotic.cx/$repo/$arch
