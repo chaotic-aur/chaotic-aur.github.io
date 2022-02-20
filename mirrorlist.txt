@@ -27,10 +27,6 @@ Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 
-# France
-# * By: IRC-Nerds <t.me/@sorcerer420>
-Server = https://fr-mirror.chaotic.cx/$repo/$arch
-
 # São Carlos, Brazil
 # * By: Universidade Federal de São Carlos
 Server = https://br-mirror.chaotic.cx/$repo/$arch

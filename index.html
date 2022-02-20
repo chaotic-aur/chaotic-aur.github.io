@@ -9,7 +9,7 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Helping you, so you don't have to worry about building AUR packages each update!">
-		<meta property="og:title" content="Chaotic-AUR - automated repo">
+		<meta property="og:title" content="Chaotic-AUR - automated binary repo 👨🏻‍💻">
 		<meta property="og:url" content="https://aur.chaotic.cx">
 		<meta property="og:description" content="Helping you, so you don't have to worry about building AUR packages each update!">
 		<link rel="stylesheet" href="style.css">
@@ -17,7 +17,7 @@
 
 <body>
 	<h1>Chaotic-AUR</h1>
-	<p>Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages</p>
+	<p>Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages 👨🏻‍💻</p>
 	<!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br>
 
 	<div class="list">
@@ -43,7 +43,7 @@
 			<li id="note-repossorting">If you are using other third party repositories, we recommend putting Chaotic-AUR <strong>prior to them </strong> in <code>/etc/pacman.conf</code>. Since we update most packages hourly and follow AUR PKGBUILDs, this repository is more suitable as first option when downloading packages.</li>
 			<li id="note-ignorepkg">If you need to omit a package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank" rel="noopener">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
 			<li>You can pick the repository which to download a package from like this: <code>pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR helpers support it too, e.g: <code>paru -S aur/firefox-hg</code>
-			<li>You must have multilib repository enabled.</li>
+			<li>You must have the multilib repository enabled.</li>
 		</ul>
 	</div>
 
@@ -73,18 +73,21 @@
 
 	<div class="list">
 		<h2>Maintainer:</h2>		
-		<p>dr460nf1r3 (Nico) 🐉<a target="_blank" rel="noopener" href="https://github.com/dr460nf1r3">&lt;github.com/dr460nf1r3&gt;</a></p><br/>
+		<p>dr460nf1r3 (Nico) 🐉 <a target="_blank" rel="noopener" href="https://github.com/dr460nf1r3">&lt;github.com/dr460nf1r3&gt;</a></p><br/>
 		<h2>Co-maintainers and contributors:</h2>
 		<ul>
 			<li>Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a></li>
-			<li>LordKitsuna (and his Threadripper) <a target="_blank" rel="noopener" href="https://github.com/lordkitsuna">&lt;github.com/lordkitsuna&gt;</a></li>
-			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- <a href="https://garudalinux.org/" target="_blank" rel="noopener">Garuda Linux founder</a></li>
+			<li>LordKitsuna (and his retired Threadripper) <a target="_blank" rel="noopener" href="https://github.com/lordkitsuna">&lt;github.com/lordkitsuna&gt;</a></li>
+			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- Garuda Linux founder</a></li>
 			<li>SolarAquarion (S Choina) <a target="_blank" rel="noopener" href="https://github.com/SolarAquarion">&lt;github.com/SolarAquarion&gt;</a></li>
 			<li>Thotypous (Paulo Matias) <a target="_blank" rel="noopener" href="https://github.com/thotypous">&lt;github.com/thotypous&gt;</a> -- Past Trusted User</li>
 			<li>Rustem B. <a target="_blank" rel="noopener" href="https://github.com/RustemB">&lt;github.com/RustemB&gt;</a></li>
 			<li>Naman (Web designer) <a target="_blank" rel="noopener" href="https://github.com/namanlp">&lt;github.com/namanlp&gt;</a></li>
-			<li>João Figueiredo (KDE's <code>-git</code> packages) <a target="_blank" rel="noopener" href="https://github.com/IslandC0der">&lt;github.com/IslandC0der&gt;</a></li>
+			<li>João Figueiredo (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/IslandC0der">&lt;github.com/IslandC0der&gt;</a></li>
 			<li>TNE (Sysadmin) <a target="_blank" rel="noopener" href="https://github.com/JustTNE">&lt;github.com/JustTNE&gt;</a></li>
+			<li>Eduard Tolosa (Building TKG kernels) <a target="_blank" rel="noopener" href="https://github.com/Edu4rdSHL">&lt;github.com/Edu4rdSHL&gt;</a></li>
+			<li>SGS (and his R9 5950X) <a target="_blank" rel="noopener" href="https://github.com/sgse">&lt;github.com/sgse&gt;</a> -- Garuda Linux founder</a>
+			<li> Alexjp (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/alexjp">&lt;github.com/alexjp&gt;</a></li>
 		</ul>
 		<h2>Special thanks:</h2>
 		<ul>
@@ -98,17 +101,17 @@
 			<li>André, <a target="_blank" rel="Noopener" href="https://github.com/olivatooo">Gabriel Olivato</a> and Maiser;</li>
 			<li>Garuda Linux staffers;</li>
 			<li>AUR package maintainers; ArchLinux TUs and staffers;</li>
-			<li>And everybody who somehow helped all the projects we prebuild.</li>
+			<li>And everybody who somehow helped all the projects we prebuild! 🤗</li>
 		</ul>
 	</div>
 
 	<div class="list"><h2>Disclaimer:</h2>
 		<p>This repo is generated on-demand from packages we use on our personal computers.
-		If there are any package license infringements please notify us through <a href="mailto:root@pedrohlc.com">email</a>. The package will then be removed and blacklisted.</p>
+		If there are any package license infringements please notify us through <a href="mailto:dr460nf1r3@chaotic.cx">email</a>. The package will then be removed and blacklisted.</p>
 	</div>	
 
 	<footer>
-		<span><h3>Last modified:</h3><code>2022-01-11 20:00 (GMT+1)</code></span>
+		<span><h3>Last modified:</h3><code>2022-02-20 15:00 (GMT+1)</code></span>
 		<span><h3>Online since:</h3><code>2018-10-19</code></span></footer>
 </body>
 </html>
