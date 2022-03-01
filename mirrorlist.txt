@@ -43,8 +43,8 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 # * By freebird54
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
 
-# Mumbai, India
-# * By viruz4274
+# India
+# * By viruz4274 (Mumbai)
 Server = https://in-mirror.chaotic.cx/$repo/$arch
-# * By WebWerks
+# * By Naman (Kaithal)
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
