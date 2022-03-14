@@ -64,6 +64,10 @@ code{
     border-radius: 0.2em;
 }
 
+.command::before{
+    content: "#";
+}
+
 a{
     color: white;
     text-decoration: none;

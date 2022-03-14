@@ -23,9 +23,9 @@
 	<div class="list">
 		<h2 id="howto">How to use it?</h2>
 		<p>First, install the primary key - it can then be used to install our keyring and mirrorlist.</p>
-			<code>$ pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com</code><br/>
-			<code>$ pacman-key --lsign-key FBA220DFC880C036</code><br/>
-			<code>$ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'</code>
+			<code class="command"> pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com</code><br/>
+			<code class="command"> pacman-key --lsign-key FBA220DFC880C036</code><br/>
+			<code class="command"> pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'</code>
 		<p>Append (adding to the <strong>end</strong> of the file) to <code>/etc/pacman.conf</code>:</p>
 		<code>[chaotic-aur]<br/>
 		Include = /etc/pacman.d/chaotic-mirrorlist
@@ -37,12 +37,12 @@
 		<ul>
 			<li id="note-powerpill">
 				You may want to use <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Powerpill">powerpill</a> to download from all mirrors simultaneously.
-				We recommend doing updates this way: <code>sudo pacman -Sy &#x26;&#x26; sudo powerpill -Su &#x26;&#x26; paru -Su</code>.<br/>
+				We recommend doing updates this way: <code class="command"> sudo pacman -Sy &#x26;&#x26; sudo powerpill -Su &#x26;&#x26; paru -Su</code>.<br/>
 				Make sure to insert all mirrors in your <code>pacman.conf</code> or use <code>chaotic-mirrorlist</code> with all of them active if using powerpill.
 			</li>
 			<li id="note-repossorting">If you are using other third party repositories, we recommend putting Chaotic-AUR <strong>prior to them </strong> in <code>/etc/pacman.conf</code>. Since we update most packages hourly and follow AUR PKGBUILDs, this repository is more suitable as first option when downloading packages.</li>
 			<li id="note-ignorepkg">If you need to omit a package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank" rel="noopener">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
-			<li>You can pick the repository which to download a package from like this: <code>pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR helpers support it too, e.g: <code>paru -S aur/firefox-hg</code>
+			<li>You can pick the repository which to download a package from like this: <code class="command"> pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR helpers support it too, e.g: <code class="command" > paru -S aur/firefox-hg</code>
 			<li>You must have the multilib repository enabled.</li>
 		</ul>
 	</div>
@@ -78,7 +78,7 @@
 		<ul>
 			<li>Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a></li>
 			<li>LordKitsuna (and his retired Threadripper) <a target="_blank" rel="noopener" href="https://github.com/lordkitsuna">&lt;github.com/lordkitsuna&gt;</a></li>
-			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- Garuda Linux founder</a></li>
+			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- Garuda Linux founder</li>
 			<li>SolarAquarion (S Choina) <a target="_blank" rel="noopener" href="https://github.com/SolarAquarion">&lt;github.com/SolarAquarion&gt;</a></li>
 			<li>Thotypous (Paulo Matias) <a target="_blank" rel="noopener" href="https://github.com/thotypous">&lt;github.com/thotypous&gt;</a> -- Past Trusted User</li>
 			<li>Rustem B. <a target="_blank" rel="noopener" href="https://github.com/RustemB">&lt;github.com/RustemB&gt;</a></li>
@@ -86,7 +86,7 @@
 			<li>João Figueiredo (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/IslandC0der">&lt;github.com/IslandC0der&gt;</a></li>
 			<li>TNE (Sysadmin) <a target="_blank" rel="noopener" href="https://github.com/JustTNE">&lt;github.com/JustTNE&gt;</a></li>
 			<li>Eduard Tolosa (Building TKG kernels) <a target="_blank" rel="noopener" href="https://github.com/Edu4rdSHL">&lt;github.com/Edu4rdSHL&gt;</a></li>
-			<li>SGS (and his R9 5950X) <a target="_blank" rel="noopener" href="https://github.com/sgse">&lt;github.com/sgse&gt;</a> -- Garuda Linux founder</a>
+			<li>SGS (and his R9 5950X) <a target="_blank" rel="noopener" href="https://github.com/sgse">&lt;github.com/sgse&gt;</a> -- Garuda Linux founder</li>
 			<li> Alexjp (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/alexjp">&lt;github.com/alexjp&gt;</a></li>
 		</ul>
 		<h2>Special thanks:</h2>
