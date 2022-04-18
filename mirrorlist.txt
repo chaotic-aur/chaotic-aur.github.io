@@ -53,4 +53,4 @@ Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 
 # Singapore
 # * By: freediff.org
-Server = https://mirror.freedif.org/Garuda/$arch
+Server = https://sg-mirror.chaotic.cx/$repo/$arch
