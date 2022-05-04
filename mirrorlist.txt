@@ -5,18 +5,18 @@ Server = https://geo-mirror.chaotic.cx/$repo/$arch
 # By: Fosshost
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
-# USA
-# * Utah, By: ash <t.me/the_ashh>
+# USA, Utah
+# * By: ash <t.me/the_ashh>
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
 
 # Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
-# * By: Ícar
+# * By: Ícar <t.me/IcarNS>
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 
 # Germany
-# * By: Nico
+# * By: Nico <dr460nf1r3.org>
 Server = https://de-mirror.chaotic.cx/$repo/$arch
 # * By: ParanoidBangL
 Server = https://de-2-mirror.chaotic.cx/$repo/$arch
@@ -46,9 +46,9 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
 
 # India
-# * By viruz4274 (Mumbai)
-Server = https://in-mirror.chaotic.cx/$repo/$arch
 # * By Naman (Kaithal)
+Server = https://in-mirror.chaotic.cx/$repo/$arch
+# * By Albony <t.me/shrirangkahale>
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 
 # Singapore
