@@ -43,6 +43,7 @@
 			<li id="note-repossorting">If you are using other third party repositories, we recommend putting Chaotic-AUR <strong>prior to them </strong> in <code>/etc/pacman.conf</code>. Since we update most packages hourly and follow AUR PKGBUILDs, this repository is more suitable as first option when downloading packages.</li>
 			<li id="note-ignorepkg">If you need to omit a package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank" rel="noopener">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
 			<li>You can pick the repository which to download a package from like this: <code class="command"> pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR helpers support it too, e.g: <code> paru -S aur/firefox-hg</code>
+			<li>There is also a mirror for IPFS users by the <a target="_blank" rel="noopener" href="https://github.com/RubenKelevra/pacman.store">pacman.store project</a>. It can be found in the mirrorlist and is commented out by default.</li>
 			<li>You must have the multilib repository enabled.</li>
 		</ul>
 	</div>
