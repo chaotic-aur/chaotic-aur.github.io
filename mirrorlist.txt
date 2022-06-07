@@ -34,7 +34,7 @@ Server = https://fr-mirror.chaotic.cx/$repo/$arch
 Server = https://br-mirror.chaotic.cx/$repo/$arch
 
 # Seoul, Korea
-# * By: Ryoichi <t.me/maakpain>
+# * By: <t.me/silent_heigou>
 Server = https://kr-mirror.chaotic.cx/$repo/$arch
 
 # Bulgaria
@@ -52,7 +52,7 @@ Server = https://in-mirror.chaotic.cx/$repo/$arch
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 
 # Singapore
-# * By: freediff.org
+# * By: freedif.org
 Server = https://sg-mirror.chaotic.cx/$repo/$arch
 
 # IPFS mirror - for instructions on how to use it consult the projects repo (https://github.com/RubenKelevra/pacman.store)
