@@ -39,6 +39,9 @@ Server = https://fr-mirror.chaotic.cx/$repo/$arch
 # São Carlos, Brazil
 # * By: Universidade Federal de São Carlos
 Server = https://br-mirror.chaotic.cx/$repo/$arch
+# São Carlos, Brazil
+# * By: Alisson <https://alisson.sh>
+Server = https://br-2-mirror.chaotic.cx/$repo/$arch
 
 # Seoul, Korea
 # * By: <t.me/silent_heigou>
