@@ -5,22 +5,37 @@ Server = https://geo-mirror.chaotic.cx/$repo/$arch
 # By: Fosshost
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
-# USA
-# Michigan
-# * By: Technetium1 <github.com/Technetium1>
-Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
-# Utah
-# * By: ash <t.me/the_ashh>
-Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
-# Virginia
-# * By: Zoe
-Server = https://us-va-mirror.chaotic.cx/$repo/$arch
+# Australia
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://au-mirror.chaotic.cx/$repo/$arch
 
-# Spain
-# * By: JKANetwork
-Server = https://es-mirror.chaotic.cx/$repo/$arch
-# * By: Ícar <t.me/IcarNS>
-Server = https://es-2-mirror.chaotic.cx/$repo/$arch
+# Brazil
+# * By: Universidade Federal de São Carlos (São Carlos)
+Server = https://br-mirror.chaotic.cx/$repo/$arch
+# * By: Alisson <https://alisson.sh> (São Paulo)
+Server = https://br-2-mirror.chaotic.cx/$repo/$arch
+
+# Bulgaria
+# * By: Sudo Man <github.com/sakrayaami>
+Server = https://bg-mirror.chaotic.cx/$repo/$arch
+
+# Canada
+# * By freebird54 (Toronto)
+Server = https://ca-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ca-2-mirror.chaotic.cx/$repo/$arch
+
+# Chile
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://cl-mirror.chaotic.cx/$repo/$arch
+
+# France
+# * By: IRC-Nerds <t.me/@sorcerer420>
+Server = https://fr-mirror.chaotic.cx/$repo/$arch
+
+# Finland
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://fi-mirror.chaotic.cx/$repo/$arch
 
 # Germany
 # * By: Nico <dr460nf1r3.org>
@@ -32,28 +47,9 @@ Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 
-# France
-# * By: IRC-Nerds <t.me/@sorcerer420>
-Server = https://fr-mirror.chaotic.cx/$repo/$arch
-
-# São Carlos, Brazil
-# * By: Universidade Federal de São Carlos
-Server = https://br-mirror.chaotic.cx/$repo/$arch
-# São Carlos, Brazil
-# * By: Alisson <https://alisson.sh>
-Server = https://br-2-mirror.chaotic.cx/$repo/$arch
-
-# Seoul, Korea
-# * By: <t.me/silent_heigou>
-Server = https://kr-mirror.chaotic.cx/$repo/$arch
-
-# Bulgaria
-# * By: Sudo Man <github.com/sakrayaami>
-Server = https://bg-mirror.chaotic.cx/$repo/$arch
-
-# Toronto, Canada
-# * By freebird54
-Server = https://ca-mirror.chaotic.cx/$repo/$arch
+# Hong Kong
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://hk-mirror.chaotic.cx/$repo/$arch
 
 # India
 # * By Naman (Kaithal)
@@ -61,9 +57,55 @@ Server = https://in-mirror.chaotic.cx/$repo/$arch
 # * By Albony <https://albony.xyz/>
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 
+# Korea
+# * By: <t.me/silent_heigou> (Seoul)
+Server = https://kr-mirror.chaotic.cx/$repo/$arch
+
+# Saudi Arabia
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ae-mirror.chaotic.cx/$repo/$arch
+
 # Singapore
 # * By: freedif.org
 Server = https://sg-mirror.chaotic.cx/$repo/$arch
+
+# Spain
+# * By: JKANetwork
+Server = https://es-mirror.chaotic.cx/$repo/$arch
+# * By: Ícar <t.me/IcarNS>
+Server = https://es-2-mirror.chaotic.cx/$repo/$arch
+
+# Taipei City
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://tw-mirror.chaotic.cx/$repo/$arch
+
+# United Arab Emirates
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ae-mirror.chaotic.cx/$repo/$arch
+
+# United Kingdom
+# London
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ae-mirror.chaotic.cx/$repo/$arch
+
+# United States
+# Arizona
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-az-mirror.chaotic.cx/$repo/$arch
+# Michigan
+# * By: Technetium1 <github.com/Technetium1>
+Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
+# New York
+# * By: Eduard <t.me/edu4rdshl>
+Server = https://us-ny-mirror.chaotic.cx/$repo/$arch
+# Utah
+# * By: ash <t.me/the_ashh>
+Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
+# Virginia
+# * By: Zoe
+Server = https://us-va-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-va-2-mirror.chaotic.cx/$repo/$arch
 
 # IPFS mirror - for instructions on how to use it consult the projects repo (https://github.com/RubenKelevra/pacman.store)
 # * By: RubenKelevra / pacman.store
