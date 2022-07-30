@@ -63,7 +63,7 @@ Server = https://kr-mirror.chaotic.cx/$repo/$arch
 
 # Saudi Arabia
 # * By: ayulauffer <t.me/ayulauffer>
-Server = https://ae-mirror.chaotic.cx/$repo/$arch
+Server = https://sa-mirror.chaotic.cx/$repo/$arch
 
 # Singapore
 # * By: freedif.org
@@ -86,7 +86,7 @@ Server = https://ae-mirror.chaotic.cx/$repo/$arch
 # United Kingdom
 # London
 # * By: ayulauffer <t.me/ayulauffer>
-Server = https://ae-mirror.chaotic.cx/$repo/$arch
+Server = https://uk-mirror.chaotic.cx/$repo/$arch
 
 # United States
 # Arizona
@@ -110,3 +110,5 @@ Server = https://us-va-2-mirror.chaotic.cx/$repo/$arch
 # IPFS mirror - for instructions on how to use it consult the projects repo (https://github.com/RubenKelevra/pacman.store)
 # * By: RubenKelevra / pacman.store
 # Server = http://chaotic-aur.pkg.pacman.store.ipns.localhost:8080/$arch
+
+
