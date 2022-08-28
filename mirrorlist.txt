@@ -37,14 +37,6 @@ Server = https://cl-1-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://cl-2-mirror.chaotic.cx/$repo/$arch
 
-# France
-# * By: IRC-Nerds <t.me/@sorcerer420>
-Server = https://fr-mirror.chaotic.cx/$repo/$arch
-
-# Finland
-# * By: ayulauffer <t.me/ayulauffer>
-Server = https://fi-mirror.chaotic.cx/$repo/$arch
-
 # Germany
 # * By: Nico <dr460nf1r3.org>
 Server = https://de-mirror.chaotic.cx/$repo/$arch
@@ -58,10 +50,6 @@ Server = https://de-4-mirror.chaotic.cx/$repo/$arch
 Server = https://de-5-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://de-6-mirror.chaotic.cx/$repo/$arch
-
-# Hong Kong
-# * By: ayulauffer <t.me/ayulauffer>
-Server = https://hk-mirror.chaotic.cx/$repo/$arch
 
 # India
 # * By Naman (Kaithal)
@@ -95,23 +83,11 @@ Server = https://kr-2-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://kr-3-mirror.chaotic.cx/$repo/$arch
 
-# South Africa
-# * By: ayulauffer <t.me/ayulauffer>
-Server = https://sa-mirror.chaotic.cx/$repo/$arch
-
-# Singapore
-# * By: freedif.org
-Server = https://sg-mirror.chaotic.cx/$repo/$arch
-
 # Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
 # * By: Ícar <t.me/IcarNS>
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
-
-# Taipei City
-# * By: ayulauffer <t.me/ayulauffer>
-Server = https://tw-mirror.chaotic.cx/$repo/$arch
 
 # United Arab Emirates
 # * By: ayulauffer <t.me/ayulauffer>
