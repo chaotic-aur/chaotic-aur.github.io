@@ -8,12 +8,16 @@ Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 # Australia
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://au-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://au-2-mirror.chaotic.cx/$repo/$arch
 
 # Brazil
 # * By: Universidade Federal de São Carlos (São Carlos)
 Server = https://br-mirror.chaotic.cx/$repo/$arch
 # * By: Alisson <t.me/alissonlauffer> (São Paulo)
 Server = https://br-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://br-3-mirror.chaotic.cx/$repo/$arch
 
 # Bulgaria
 # * By: Sudo Man <github.com/sakrayaami>
@@ -24,10 +28,14 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://ca-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ca-3-mirror.chaotic.cx/$repo/$arch
 
 # Chile
 # * By: ayulauffer <t.me/ayulauffer>
-Server = https://cl-mirror.chaotic.cx/$repo/$arch
+Server = https://cl-1-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://cl-2-mirror.chaotic.cx/$repo/$arch
 
 # France
 # * By: IRC-Nerds <t.me/@sorcerer420>
@@ -46,6 +54,10 @@ Server = https://de-2-mirror.chaotic.cx/$repo/$arch
 Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://de-5-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://de-6-mirror.chaotic.cx/$repo/$arch
 
 # Hong Kong
 # * By: ayulauffer <t.me/ayulauffer>
@@ -56,14 +68,32 @@ Server = https://hk-mirror.chaotic.cx/$repo/$arch
 Server = https://in-mirror.chaotic.cx/$repo/$arch
 # * By Albony <https://albony.xyz/>
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://in-3-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://in-4-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://in-5-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://in-6-mirror.chaotic.cx/$repo/$arch
 
 # Japan
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://jp-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://jp-1-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://jp-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://jp-3-mirror.chaotic.cx/$repo/$arch
 
 # Korea
 # * By: <t.me/silent_heigou> (Seoul)
 Server = https://kr-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://kr-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://kr-3-mirror.chaotic.cx/$repo/$arch
 
 # South Africa
 # * By: ayulauffer <t.me/ayulauffer>
@@ -86,16 +116,28 @@ Server = https://tw-mirror.chaotic.cx/$repo/$arch
 # United Arab Emirates
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://ae-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://ae-2-mirror.chaotic.cx/$repo/$arch
 
 # United Kingdom
 # London
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://uk-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://uk-1-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://uk-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://uk-3-mirror.chaotic.cx/$repo/$arch
 
 # United States
 # Arizona
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://us-az-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-az-1-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-az-2-mirror.chaotic.cx/$repo/$arch
 # Florida
 # * By: Alisson <t.me/alissonlauffer>
 Server = https://us-fl-mirror.chaotic.cx/$repo/$arch
@@ -113,6 +155,10 @@ Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
 Server = https://us-va-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://us-va-2-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-va-3-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://us-va-4-mirror.chaotic.cx/$repo/$arch
 
 # IPFS mirror - for instructions on how to use it consult the projects repo (https://github.com/RubenKelevra/pacman.store)
 # * By: RubenKelevra / pacman.store
