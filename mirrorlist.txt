@@ -123,6 +123,9 @@ Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
 # New York
 # * By: Eduard <t.me/edu4rdshl>
 Server = https://us-ny-mirror.chaotic.cx/$repo/$arch
+# Texas
+# * By: xstefen <t.me/xstefen>
+Server = https://us-tx-mirror.chaotic.cx/$repo/$arch
 # Utah
 # * By: ash <t.me/the_ashh>
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
