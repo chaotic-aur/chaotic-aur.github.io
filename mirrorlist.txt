@@ -37,6 +37,14 @@ Server = https://cl-1-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://cl-2-mirror.chaotic.cx/$repo/$arch
 
+# France
+# * By: IRC-Nerds <irc-nerds.net>
+Server = https://fr-1-mirror.chaotic.cx/$repo/$arch
+# * By: ayulauffer <t.me/ayulauffer>
+Server = https://fr-2-mirror.chaotic.cx/$repo/$arch
+# * By: Snowy <github.com/Gontier-Julien>
+Server = https://fr-3-mirror.chaotic.cx/$repo/$arch
+
 # Germany
 # * By: Nico <dr460nf1r3.org>
 Server = https://de-mirror.chaotic.cx/$repo/$arch
