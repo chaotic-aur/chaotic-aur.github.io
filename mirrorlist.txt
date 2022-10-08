@@ -8,7 +8,7 @@ Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
 # China
 # * By Aliyun (ali-yum@alibaba-inc.com)
-Server = https://mirrors.aliyun.com/$repo/$arch
+Server = https://cdn-cn-mirror.chaotic.cx/$repo/$arch
 
 
 ## Regular Syncthing mirrors (close to instant syncing)
