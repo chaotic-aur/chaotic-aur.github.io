@@ -1,10 +1,17 @@
 # Automatic per-country routing of the mirrors below.
 Server = https://geo-mirror.chaotic.cx/$repo/$arch
 
-# CDN (delayed syncing)
-# By: Fosshost
+## Special CDN mirrors (delayed syncing)
+# Globally
+# * By: Fosshost
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
+# China
+# * By Aliyun (ali-yum@alibaba-inc.com)
+Server = https://mirrors.aliyun.com/$repo/$arch
+
+
+## Regular Syncthing mirrors (close to instant syncing)
 # Australia
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://au-mirror.chaotic.cx/$repo/$arch
