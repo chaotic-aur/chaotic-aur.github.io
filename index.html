@@ -1,132 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Chaotic-AUR - automated building repo for AUR packages</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chaotic-AUR - an automated building repo for AUR packages</title>
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Helping you, so you don't have to worry about building AUR packages each update!">
-		<meta property="og:title" content="Chaotic-AUR - automated binary repo 👨🏻‍💻">
-		<meta property="og:url" content="https://aur.chaotic.cx">
-		<meta property="og:description" content="Helping you, so you don't have to worry about building AUR packages each update!">
-		<link rel="stylesheet" href="style.css">
-	</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-	<h1>Chaotic-AUR</h1>
-	<p>Automated building repo for <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> packages 👨🏻‍💻</p>
-	<!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Helping you, so you don't have to worry about building AUR packages each update!"
+    />
+    <meta
+      property="og:title"
+      content="Chaotic-AUR - automated binary repo 👨🏻‍💻"
+    />
+    <meta property="og:url" content="https://aur.chaotic.cx" />
+    <meta
+      property="og:description"
+      content="Helping you, so you don't have to worry about building AUR packages each update!"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-	<div class="list">
-		<h2 id="howto">How to use it?</h2>
-		<p>First, install the primary key - it can then be used to install our keyring and mirrorlist.</p>
-			<code class="command"> pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com</code><br/>
-			<code class="command"> pacman-key --lsign-key FBA220DFC880C036</code><br/>
-			<code class="command"> pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'</code>
-		<p>Append (adding to the <strong>end</strong> of the file) to <code>/etc/pacman.conf</code>:</p>
-		<code>[chaotic-aur]<br/>
-		Include = /etc/pacman.d/chaotic-mirrorlist
-		</code>
-	</div>
-	
-	<div class="list">
-		<h2>Recommendations:</h2>
-		<ul>
-			<li id="note-powerpill">
-				You may want to use <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Powerpill">powerpill</a> to download from all mirrors simultaneously.
-				We recommend doing updates this way: <code> sudo pacman -Sy &#x26;&#x26; sudo powerpill -Su &#x26;&#x26; paru -Su</code>.<br/>
-				Make sure to insert all mirrors in your <code>pacman.conf</code> or use <code>chaotic-mirrorlist</code> with all of them active if using powerpill.
-			</li>
-			<li id="note-repossorting">If you are using other third party repositories, we recommend putting Chaotic-AUR <strong>prior to them </strong> in <code>/etc/pacman.conf</code>. Since we update most packages hourly and follow AUR PKGBUILDs, this repository is more suitable as first option when downloading packages.</li>
-			<li id="note-ignorepkg">If you need to omit a package update to use locally built ones (e.g: with native optimizations), <a href="https://www.archlinux.org/pacman/pacman.conf.5.html" target="_blank" rel="noopener">you can</a> add '<code>IgnorePkg = ...</code>' to repo's section in <code>/etc/pacman.conf</code></li>
-			<li>You can pick the repository which to download a package from like this: <code class="command"> pacman -S chaotic-aur/dxvk-mingw-git</code>. Some AUR helpers support it too, e.g: <code> paru -S aur/firefox-hg</code>
-			<li>There is also a mirror for IPFS users by the <a target="_blank" rel="noopener" href="https://github.com/RubenKelevra/pacman.store">pacman.store project</a>. It can be found in the mirrorlist and is commented out by default.</li>
-			<li>You must have the multilib repository enabled.</li>
-		</ul>
-	</div>
+  <body>
+    <h1>Chaotic-AUR</h1>
+    <p>
+      Automated building repo for
+      <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a>
+      packages 👨🏻‍💻
+    </p>
+    <!-- <p>For news, check the telegram channel <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a>. --><br />
 
-	<div class="list">
-		<h2>Mirror map:</h2>
-		<iframe src="https://status.chaotic.cx/map" frameborder="0" height="500rem" width="100%"></iframe>
-	</div>
+    <div class="list">
+      <h2 id="howto">How to use it?</h2>
+      <p>
+        First, install the primary key - it can then be used to install our
+        keyring and mirrorlist.
+      </p>
+      <code class="command">
+        pacman-key --recv-key FBA220DFC880C036 --keyserver
+        keyserver.ubuntu.com</code
+      ><br />
+      <code class="command"> pacman-key --lsign-key FBA220DFC880C036</code
+      ><br />
+      <code class="command">
+        pacman -U
+        'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+        'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'</code
+      >
+      <p>
+        Append (adding to the <strong>end</strong> of the file) to
+        <code>/etc/pacman.conf</code>:
+      </p>
+      <code
+        >[chaotic-aur]<br />
+        Include = /etc/pacman.d/chaotic-mirrorlist
+      </code>
+    </div>
 
-	<div class="list">
-		<h2>About:</h2>
-		<ul>
-			<li>Most packages available in this repo are automatically built from their respective <a target="_blank" rel="noopener" href="https://aur.archlinux.org">AUR</a> source package. However there are a few exceptions, check <a href="https://github.com/chaotic-aur/packages">github.com/chaotic-aur/packages</a> to find out which ones.</li>
-			<li>The primary building cluster is a node in <a target="_blank" rel="noopener" href="https://www2.ufscar.br/">UFSCar</a>s datacenter which is hosted in São Carlos, São Paulo, Brazil.</li>
-		</ul>
-		<br>
-		<p>Feel free to create issues to suggest enhancements, flag database corruptions and all other requests:
-		<a target="_blank" rel="noopener" href="https://github.com/chaotic-aur/packages/issues">Issues</a><br/>
-		Please report build bugs to the AUR package maintainers.</p>
-	</div>
+    <div class="list">
+      <h2>Recommendations:</h2>
+      <ul>
+        <li id="note-powerpill">
+          You may want to use
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://wiki.archlinux.org/index.php/Powerpill"
+            >powerpill</a
+          >
+          to download from all mirrors simultaneously. We recommend doing
+          updates this way:
+          <code>
+            sudo pacman -Sy &#x26;&#x26; sudo powerpill -Su &#x26;&#x26; paru
+            -Su</code
+          >.<br />
+          Make sure to insert all mirrors in your <code>pacman.conf</code> or
+          use <code>chaotic-mirrorlist</code> with all of them active if using
+          powerpill.
+        </li>
+        <li id="note-repossorting">
+          If you are using other third party repositories, we recommend putting
+          Chaotic-AUR <strong>prior to them </strong> in
+          <code>/etc/pacman.conf</code>. Since we update most packages hourly
+          and follow AUR PKGBUILDs, this repository is more suitable as first
+          option when downloading packages.
+        </li>
+        <li id="note-ignorepkg">
+          If you need to omit a package update to use locally built ones (e.g:
+          with native optimizations),
+          <a
+            href="https://www.archlinux.org/pacman/pacman.conf.5.html"
+            target="_blank"
+            rel="noopener"
+            >you can</a
+          >
+          add '<code>IgnorePkg = ...</code>' to repo's section in
+          <code>/etc/pacman.conf</code>
+        </li>
+        <li>
+          You can pick the repository which to download a package from like
+          this:
+          <code class="command"> pacman -S chaotic-aur/dxvk-mingw-git</code>.
+          Some AUR helpers support it too, e.g:
+          <code> paru -S aur/firefox-hg</code>
+        </li>
+        <li>
+          There is also a mirror for IPFS users by the
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/RubenKelevra/pacman.store"
+            >pacman.store project</a
+          >. It can be found in the mirrorlist and is commented out by default.
+        </li>
+        <li>You must have the multilib repository enabled.</li>
+      </ul>
+    </div>
 
-	<div class="list">
-		<h2>Links:</h2>
-		<ul>
-			<li>Telegram channel with news and updates: <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur">@chaotic_aur</a></li>
-			<li>Our community group for on- and offtopics: <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur_sac">@chaotic_aur_sac</a> - feel free to come by! 😊 (<a target="_blank" rel="noopener" href="https://matrix.to/#/%23chaotic-aur:mozilla.org">Matrix-bridge</a>)</li>
-			<li>Package list: <a target="_blank" rel="noopener" href="https://archlinux.pkgs.org/rolling/chaotic-aur-x86_64/">Pkgs.org</a></li>
-			<li>Package directory (for manual downloads): <a target="_blank" rel="noopener" href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/">Manual downloads</a></li>
-			<li>Infra / toolbox source code: <a target="_blank" rel="noopener" href="https://github.com/chaotic-aur/toolbox">GitHub</a></li>
-			<li>Status page: <a target="_blank" rel="noopener" href="https://status.chaotic.cx">Status monitoring</a></li>
-			<li>Latest logs: <a target="_blank" rel="noopener" href="https://builds.garudalinux.org/repos/chaotic-aur/logs/">Logfiles</a></li>
-			<li>Chaotic keys: <a target="_blank" rel="noopener" href="https://aur.chaotic.cx/chaotic.gpg">Keyring</a></li>
-		</ul>
-	</div>
+    <div class="list">
+      <h2>Mirror map:</h2>
+      <iframe
+        src="https://status.chaotic.cx/map"
+        frameborder="0"
+        height="500rem"
+        width="100%"
+      ></iframe>
+    </div>
 
-	<div class="list">
-		<h2>Lead Maintainer:</h2>
-		<p>dr460nf1r3 (Nico) 🐉 <a target="_blank" rel="noopener" href="https://github.com/dr460nf1r3">&lt;github.com/dr460nf1r3&gt;</a></p><br/>
-		<h2>Co-maintainers and contributors:</h2>
-		<ul>
-			<li>Pedro H. Lara Campos <a target="_blank" rel="noopener" href="https://github.com/PedroHLC">&lt;github.com/PedroHLC&gt;</a> -- Founder</li>
-			<li>LordKitsuna (and his retired Threadripper) <a target="_blank" rel="noopener" href="https://github.com/lordkitsuna">&lt;github.com/lordkitsuna&gt;</a></li>
-			<li>SolarAquarion (S Choina) <a target="_blank" rel="noopener" href="https://github.com/SolarAquarion">&lt;github.com/SolarAquarion&gt;</a></li>
-			<li>Thotypous (Paulo Matias) <a target="_blank" rel="noopener" href="https://github.com/thotypous">&lt;github.com/thotypous&gt;</a> -- <a target="_blank" rel="noopener" href="https://archlinux.org/people/trusted-user-fellows/#pmatias">Past Trusted User</a>, co-founder</li>
-			<li>Rustem B. <a target="_blank" rel="noopener" href="https://github.com/RustemB">&lt;github.com/RustemB&gt;</a></li>
-			<li>Naman (Web designer) <a target="_blank" rel="noopener" href="https://github.com/namanlp">&lt;github.com/namanlp&gt;</a></li>
-			<li>João Figueiredo (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/IslandC0der">&lt;github.com/IslandC0der&gt;</a></li>
-			<li>TNE (Sysadmin) <a target="_blank" rel="noopener" href="https://github.com/JustTNE">&lt;github.com/JustTNE&gt;</a></li>
-			<li>Eduard Tolosa (Building TKG kernels) <a target="_blank" rel="noopener" href="https://github.com/Edu4rdSHL">&lt;github.com/Edu4rdSHL&gt;</a></li>
-			<li>Alexjp (KDE's -git packages) <a target="_blank" rel="noopener" href="https://github.com/alexjp">&lt;github.com/alexjp&gt;</a></li>
-			<li>Technetium1 (General package maintenance) <a target="_blank" rel="noopener" href="https://github.com/technetium1">&lt;github.com/technetium1&gt;</a></li>
-		</ul>
-		<h2>Special thanks:</h2>
-		<ul>
-			<li>All our current and past mirror providers;</li>
-			<li>Librewish (Shrinivas Kumbhar) <a target="_blank" rel="noopener" href="https://github.com/librewish">&lt;github.com/librewish&gt;</a> -- Ex-co-maintainer, Garuda Linux founder</li>
-			<li>Garuda Linux staffers;</li>
-			<li>
-				<a target="_blank" rel="noopener" href="https://github.com/Tk-Glitch">Tk-Glitch (TkG)</a>;
-				<a target="_blank" rel="noopener" href="https://github.com/Kodehawa">Kodehawa</a>;
-				<a target="_blank" rel="noopener" href="https://aur.archlinux.org/account/figue">Figue</a>;
-				<a target="_blank" rel="noopener" href="https://github.com/benjamimgois">Benjamim Gois</a>;
-			</li>
-			<li>Frogging Family and Linux Gaming Dev Discord servers;</li>
-			<li>André, <a target="_blank" rel="noopener" href="https://github.com/olivatooo">Gabriel Olivato</a> and Maiser;</li>
-			<li>AUR package maintainers; ArchLinux TUs and staffers;</li>
-			<li>And everybody who somehow helped all the projects we prebuild! 🤗</li>
-		</ul>
-	</div>
+    <div class="list">
+      <h2>About:</h2>
+      <ul>
+        <li>
+          Most packages available in this repo are automatically built from
+          their respective
+          <a target="_blank" rel="noopener" href="https://aur.archlinux.org"
+            >AUR</a
+          >
+          source package. However there are a few exceptions, check
+          <a href="https://github.com/chaotic-aur/packages"
+            >github.com/chaotic-aur/packages</a
+          >
+          to find out which ones.
+        </li>
+        <li>
+          The primary building cluster is a node in
+          <a target="_blank" rel="noopener" href="https://www2.ufscar.br/"
+            >UFSCar</a
+          >s datacenter which is hosted in São Carlos, São Paulo, Brazil.
+        </li>
+      </ul>
+      <br />
+      <p>
+        Feel free to create issues to suggest enhancements, flag database
+        corruptions and all other requests:
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/chaotic-aur/packages/issues"
+          >Issues</a
+        ><br />
+        Please report build bugs to the AUR package maintainers.
+      </p>
+    </div>
 
-	<div class="list"><h2>Disclaimer:</h2>
-		<p>This repo is generated on-demand from packages we use on our personal computers.
-		If there are any package license infringements please notify us through <a href="mailto:dr460nf1r3@chaotic.cx">email</a>. The package will then be removed and blacklisted.</p>
-	</div>
-	
-	<div class="list">
-		<p>In memory of our colleague, Rustem Bakirov.</p>
-		<p>A proactive co-maintainer who in Dec/2021 left us at the age of 20.</p>
-	</div>
+    <div class="list">
+      <h2>Links:</h2>
+      <ul>
+        <li>
+          Telegram channel with news and updates:
+          <a target="_blank" rel="noopener" href="https://t.me/s/chaotic_aur"
+            >@chaotic_aur</a
+          >
+        </li>
+        <li>
+          Our community group for on- and offtopics:
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://t.me/s/chaotic_aur_sac"
+            >@chaotic_aur_sac</a
+          >
+          - feel free to come by! 😊 (<a
+            target="_blank"
+            rel="noopener"
+            href="https://matrix.to/#/%23chaotic-aur:mozilla.org"
+            >Matrix-bridge</a
+          >)
+        </li>
+        <li>
+          Package list:
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://archlinux.pkgs.org/rolling/chaotic-aur-x86_64/"
+            >Pkgs.org</a
+          >
+        </li>
+        <li>
+          Package directory (for manual downloads):
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://builds.garudalinux.org/repos/chaotic-aur/x86_64/"
+            >Manual downloads</a
+          >
+        </li>
+        <li>
+          Infra / toolbox source code:
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/chaotic-aur/toolbox"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          Status page:
+          <a target="_blank" rel="noopener" href="https://uptimes.chaotic.cx"
+            >Status monitoring</a
+          >
+        </li>
+        <li>
+          Latest logs:
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://builds.garudalinux.org/repos/chaotic-aur/logs/"
+            >Logfiles</a
+          >
+        </li>
+        <li>
+          Chaotic keys:
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://aur.chaotic.cx/chaotic.gpg"
+            >Keyring</a
+          >
+        </li>
+      </ul>
+    </div>
 
-	<footer>
-		<span><h3>Last modified:</h3><code>2022-08-02 08:00 (GMT+2)</code></span>
-		<span><h3>Online since:</h3><code>2018-10-19</code></span>
-	</footer>
-</body>
+    <div class="list">
+      <h2>Lead Maintainer:</h2>
+      <p>
+        dr460nf1r3 (Nico) 🐉
+        <a target="_blank" rel="noopener" href="https://github.com/dr460nf1r3"
+          >&lt;github.com/dr460nf1r3&gt;</a
+        >
+      </p>
+      <br />
+      <h2>Co-maintainers and contributors:</h2>
+      <ul>
+        <li>
+          Pedro H. Lara Campos
+          <a target="_blank" rel="noopener" href="https://github.com/PedroHLC"
+            >&lt;github.com/PedroHLC&gt;</a
+          >
+          -- Founder
+        </li>
+        <li>
+          LordKitsuna (and his retired Threadripper)
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/lordkitsuna"
+            >&lt;github.com/lordkitsuna&gt;</a
+          >
+        </li>
+        <li>
+          SolarAquarion (S Choina)
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/SolarAquarion"
+            >&lt;github.com/SolarAquarion&gt;</a
+          >
+        </li>
+        <li>
+          Thotypous (Paulo Matias)
+          <a target="_blank" rel="noopener" href="https://github.com/thotypous"
+            >&lt;github.com/thotypous&gt;</a
+          >
+          --
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://archlinux.org/people/trusted-user-fellows/#pmatias"
+            >Past Trusted User</a
+          >, co-founder
+        </li>
+        <li>
+          Rustem B.
+          <a target="_blank" rel="noopener" href="https://github.com/RustemB"
+            >&lt;github.com/RustemB&gt;</a
+          >
+        </li>
+        <li>
+          Naman (Web designer)
+          <a target="_blank" rel="noopener" href="https://github.com/namanlp"
+            >&lt;github.com/namanlp&gt;</a
+          >
+        </li>
+        <li>
+          João Figueiredo (KDE's -git packages)
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/IslandC0der"
+            >&lt;github.com/IslandC0der&gt;</a
+          >
+        </li>
+        <li>
+          TNE (Sysadmin)
+          <a target="_blank" rel="noopener" href="https://github.com/JustTNE"
+            >&lt;github.com/JustTNE&gt;</a
+          >
+        </li>
+        <li>
+          Eduard Tolosa (Building TKG kernels)
+          <a target="_blank" rel="noopener" href="https://github.com/Edu4rdSHL"
+            >&lt;github.com/Edu4rdSHL&gt;</a
+          >
+        </li>
+        <li>
+          Alexjp (KDE's -git packages)
+          <a target="_blank" rel="noopener" href="https://github.com/alexjp"
+            >&lt;github.com/alexjp&gt;</a
+          >
+        </li>
+        <li>
+          Technetium1 (General package maintenance)
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/technetium1"
+            >&lt;github.com/technetium1&gt;</a
+          >
+        </li>
+      </ul>
+      <h2>Special thanks:</h2>
+      <ul>
+        <li>All our current and past mirror providers;</li>
+        <li>
+          Librewish (Shrinivas Kumbhar)
+          <a target="_blank" rel="noopener" href="https://github.com/librewish"
+            >&lt;github.com/librewish&gt;</a
+          >
+          -- Ex-co-maintainer, Garuda Linux founder
+        </li>
+        <li>Garuda Linux staffers;</li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://github.com/Tk-Glitch"
+            >Tk-Glitch (TkG)</a
+          >;
+          <a target="_blank" rel="noopener" href="https://github.com/Kodehawa"
+            >Kodehawa</a
+          >;
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://aur.archlinux.org/account/figue"
+            >Figue</a
+          >;
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/benjamimgois"
+            >Benjamim Gois</a
+          >;
+        </li>
+        <li>Frogging Family and Linux Gaming Dev Discord servers;</li>
+        <li>
+          André,
+          <a target="_blank" rel="noopener" href="https://github.com/olivatooo"
+            >Gabriel Olivato</a
+          >
+          and Maiser;
+        </li>
+        <li>AUR package maintainers; ArchLinux TUs and staffers;</li>
+        <li>
+          And everybody who somehow helped all the projects we prebuild! 🤗
+        </li>
+      </ul>
+    </div>
+
+    <div class="list">
+      <h2>Disclaimer:</h2>
+      <p>
+        This repo is generated on-demand from packages we use on our personal
+        computers. If there are any package license infringements please notify
+        us through <a href="mailto:dr460nf1r3@chaotic.cx">email</a>. The package
+        will then be removed and blacklisted.
+      </p>
+    </div>
+
+    <div class="list">
+      <p>In memory of our colleague, Rustem Bakirov.</p>
+      <p>A proactive co-maintainer who in Dec/2021 left us at the age of 20.</p>
+    </div>
+
+    <footer>
+      <span
+        ><h3>Last modified:</h3>
+        <code>2023-27-01 12:00 (GMT+1)</code></span
+      >
+      <span
+        ><h3>Online since:</h3>
+        <code>2018-10-19</code></span
+      >
+    </footer>
+  </body>
 </html>
