@@ -1,15 +1,10 @@
-# Automatic per-country routing of the mirrors below.
-Server = https://geo-mirror.chaotic.cx/$repo/$arch
-
-## Special CDN mirrors (delayed syncing)
+## Special CDN mirror (delayed syncing, expect some (safe to ignore) amount of 404s)
 # Globally
-# * By: Fosshost
+# * By: Garuda Linux donators, hosted on Cloudflare R2
 Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 
-# China
-# * By Aliyun (ali-yum@alibaba-inc.com)
-Server = https://cdn-cn-mirror.chaotic.cx/$repo/$arch
-
+# Automatic per-country routing of the mirrors below.
+Server = https://geo-mirror.chaotic.cx/$repo/$arch
 
 ## Regular Syncthing mirrors (close to instant syncing)
 # Brazil
