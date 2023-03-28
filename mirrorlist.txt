@@ -21,6 +21,10 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 # * By freebird54 (Toronto)
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
 
+# Chile
+# * By makzk (Santiago)
+Server = https://cl-mirror.chaotic.cx/$repo/$arch
+
 # France
 # * By: IRC-Nerds <irc-nerds.net>
 Server = https://fr-1-mirror.chaotic.cx/$repo/$arch
