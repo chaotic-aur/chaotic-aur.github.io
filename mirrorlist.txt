@@ -85,6 +85,10 @@ Server = https://in-5-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network
 Server = https://in-6-mirror.chaotic.cx/$repo/$arch
 
+# Isreal
+# * By: Silky.Network
+Server = https://il-mirror.chaotic.cx/$repo/$arch
+
 # Japan
 # * By: Silky.Network
 Server = https://jp-mirror.chaotic.cx/$repo/$arch
