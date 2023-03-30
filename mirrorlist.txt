@@ -7,11 +7,21 @@ Server = https://cdn-mirror.chaotic.cx/$repo/$arch
 Server = https://geo-mirror.chaotic.cx/$repo/$arch
 
 ## Regular Syncthing mirrors (close to instant syncing)
+# Australia
+# * By: Silky.Network
+Server = https://au-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://au-2-mirro.chaotic.cx/$repo/$arch
+
 # Brazil
 # * By: Universidade Federal de São Carlos (São Carlos)
 Server = https://br-mirror.chaotic.cx/$repo/$arch
 # * By: Alisson <t.me/alissonlauffer> (São Paulo)
 Server = https://br-2-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://br-3-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://br-4-mirror.chaotic.cx/$repo/$arch
 
 # Bulgaria
 # * By: Sudo Man <github.com/sakrayaami>
@@ -20,16 +30,28 @@ Server = https://bg-mirror.chaotic.cx/$repo/$arch
 # Canada
 # * By freebird54 (Toronto)
 Server = https://ca-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://ca-2-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://ca-3-mirror.chaotic.cx/$repo/$arch
+
+# Austria
+# * By: Silky.Network
+Server = https://ch-2-mirror.chaotic.cx/$repo/$arch
 
 # Chile
 # * By makzk (Santiago)
 Server = https://cl-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://cl-2-mirror.chaotic.cx/$repo/$arch
 
 # France
-# * By: IRC-Nerds <irc-nerds.net>
-Server = https://fr-1-mirror.chaotic.cx/$repo/$arch
 # * By: Snowy <github.com/Gontier-Julien>
+Server = https://fr-1-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
 Server = https://fr-2-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://fr-3-mirror.chaotic.cx/$repo/$arch
 
 # Germany
 # * By: Nico <dr460nf1r3.org>
@@ -40,6 +62,10 @@ Server = https://de-2-mirror.chaotic.cx/$repo/$arch
 Server = https://de-3-mirror.chaotic.cx/$repo/$arch
 # * By: redgloboli
 Server = https://de-4-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://de-5-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://de-6-mirror.chaotic.cx/$repo/$arch
 
 # Greece
 # * By: vmmaniac <github.com/vmmaniac>
@@ -52,24 +78,70 @@ Server = https://in-mirror.chaotic.cx/$repo/$arch
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 # * By: BRAVO68DEV <https://www.itsmebravo.dev/>
 Server = https://in-3-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://in-4-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://in-5-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://in-6-mirror.chaotic.cx/$repo/$arch
+
+# Japan
+# * By: Silky.Network
+Server = https://jp-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://jp-2-mirror.chaotic.cx/$repo/$arch
 
 # Korea
 # * By: <t.me/silent_heigou> (Seoul)
 Server = https://kr-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://kr-2-mirror.chaotic.cx/$repo/$arch
+
+# Mexico
+# * By: Silky.Network
+Server = https://mx-mirror.chaotic.cx/$repo/$arch
+
+# Netherlands
+# * By: Silky.Network
+Server = https://nl-2-mirror.chaotic.cx/$repo/$arch
+
+# Saudi Arabia
+# * By: Silky.Network
+Server = https://sa-mirror.chaotic.cx/$repo/$arch
+
+# South Africa
+# * By: Silky.Network
+Server = https://za-mirror.chaotic.cx/$repo/$arch
 
 # Spain
 # * By: JKANetwork
 Server = https://es-mirror.chaotic.cx/$repo/$arch
 # * By: Ícar <t.me/IcarNS>
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://es-3-mirror.chaotic.cx/$repo/$arch
+
+# Sweden
+# * By: Silky.Network
+Server = https://se-mirror.chaotic.cx/$repo/$arch
 
 # United Arab Emirates
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://ae-mirror.chaotic.cx/$repo/$arch
 # * By: ayulauffer <t.me/ayulauffer>
 Server = https://ae-2-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://ae-3-mirror.chaotic.cx/$repo/$arch
+
+# United Kingdom
+# * By: Silky.Network
+Server = https://uk-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://uk-2-mirror.chaotic.cx/$repo/$arch
 
 # United States
+# * By: Silky.Network
+Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
 # * By: Alisson <t.me/alissonlauffer>
 Server = https://us-fl-mirror.chaotic.cx/$repo/$arch
 # Michigan
@@ -81,6 +153,8 @@ Server = https://us-ny-mirror.chaotic.cx/$repo/$arch
 # Texas
 # * By: xstefen <t.me/xstefen>
 Server = https://us-tx-mirror.chaotic.cx/$repo/$arch
+# * By: Silky.Network
+Server = https://us-tx-2-mirror.chaotic.cx/$repo/$arch
 # Utah
 # * By: ash <t.me/the_ashh>
 Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
