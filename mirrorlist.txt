@@ -11,7 +11,7 @@ Server = https://geo-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network
 Server = https://au-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network
-Server = https://au-2-mirro.chaotic.cx/$repo/$arch
+Server = https://au-2-mirror.chaotic.cx/$repo/$arch
 
 # Brazil
 # * By: Universidade Federal de São Carlos (São Carlos)
