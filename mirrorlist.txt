@@ -168,7 +168,7 @@ Server = https://us-fl-mirror.chaotic.cx/$repo/$arch
 # * By: Technetium1 <github.com/Technetium1>
 Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network (Chicago, US)
-Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
+Server = https://us-mi-2-mirror.chaotic.cx/$repo/$arch
 # New York
 # * By: Eduard <t.me/edu4rdshl>
 Server = https://us-ny-mirror.chaotic.cx/$repo/$arch
