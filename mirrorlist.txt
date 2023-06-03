@@ -136,6 +136,8 @@ Server = https://es-mirror.chaotic.cx/$repo/$arch
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network (Madrid, Madrid)
 Server = https://es-3-mirror.chaotic.cx/$repo/$arch
+# * By: Ícar <t.me/IcarNS>
+Server = https://es-4-mirror.chaotic.cx/$repo/$arch
 
 # Sweden
 # * By: Silky.Network (Arlanda, Stockholm County)
