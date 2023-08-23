@@ -53,9 +53,7 @@ Server = https://fr-2-mirror.chaotic.cx/$repo/$arch
 # * By: Silky.Network (Marseille, Provence-Alpes-Côte d'Azur)
 Server = https://fr-3-mirror.chaotic.cx/$repo/$arch
 
-# Germany
-# * By: Nico <dr460nf1r3.org>
-Server = https://de-mirror.chaotic.cx/$repo/$arch
+# Germany (de-1 ceased to exist)
 # * By: ParanoidBangL
 Server = https://de-2-mirror.chaotic.cx/$repo/$arch
 # * By: itsTyrion
