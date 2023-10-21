@@ -10,8 +10,6 @@ Server = https://geo-mirror.chaotic.cx/$repo/$arch
 # Brazil
 # * By: Universidade Federal de São Carlos (São Carlos)
 Server = https://br-mirror.chaotic.cx/$repo/$arch
-# * By: Alisson <t.me/alissonlauffer> (São Paulo)
-Server = https://br-2-mirror.chaotic.cx/$repo/$arch
 
 # Bulgaria
 # * By: Sudo Man <github.com/sakrayaami>
@@ -60,15 +58,9 @@ Server = https://es-mirror.chaotic.cx/$repo/$arch
 Server = https://es-2-mirror.chaotic.cx/$repo/$arch
 
 # United States
-# * By: Alisson <t.me/alissonlauffer>
-Server = https://us-fl-mirror.chaotic.cx/$repo/$arch
-# Michigan
 # * By: Technetium1 <github.com/Technetium1>
 Server = https://us-mi-mirror.chaotic.cx/$repo/$arch
 # New York
-# * By: Zoe
-Server = https://us-ny-mirror.chaotic.cx/$repo/$arch
-# Texas
 # * By: xstefen <t.me/xstefen>
 Server = https://us-tx-mirror.chaotic.cx/$repo/$arch
 # Utah
