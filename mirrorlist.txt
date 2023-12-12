@@ -23,10 +23,6 @@ Server = https://ca-mirror.chaotic.cx/$repo/$arch
 # * By makzk (Santiago)
 Server = https://cl-mirror.chaotic.cx/$repo/$arch
 
-# France
-# * By: Snowy <github.com/Gontier-Julien>
-Server = https://fr-1-mirror.chaotic.cx/$repo/$arch
-
 # Germany (de-1 ceased to exist)
 # * By: ParanoidBangL
 Server = https://de-2-mirror.chaotic.cx/$repo/$arch
