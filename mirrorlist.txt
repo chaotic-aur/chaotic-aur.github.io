@@ -42,6 +42,8 @@ Server = https://in-mirror.chaotic.cx/$repo/$arch
 Server = https://in-2-mirror.chaotic.cx/$repo/$arch
 # * By: BRAVO68DEV <https://www.itsmebravo.dev/>
 Server = https://in-3-mirror.chaotic.cx/$repo/$arch
+# * By Albony (Chennai)
+Server = https://in-4-mirror.chaotic.cx/$repo/$arch
 
 # Korea
 # * By: <t.me/silent_heigou> (Seoul)
